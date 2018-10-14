@@ -4,6 +4,13 @@ module.exports = {
     siteUrl: 'https://reactgo.com',
   },
   plugins: [
+          {
+        resolve: `gatsby-plugin-google-analytics`,
+        options: {
+          trackingId: "UA-127467388-1",
+          head: true,
+        },
+      },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -14,9 +21,10 @@ module.exports = {
         background_color: '#fff',
         theme_color: '#fff',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/gatsby-icon.png',
       },
     },
+
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

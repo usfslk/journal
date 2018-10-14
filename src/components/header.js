@@ -5,7 +5,6 @@ const Header = ({ siteTitle }) => (
   <div
     style={{
       background: '#222',
-      marginBottom: '1.45rem',
     }}
   >
     <div
@@ -19,7 +18,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: '#fcfcfc',
+            color: '#FCFCFC',
             textDecoration: 'none',
           }}
         >

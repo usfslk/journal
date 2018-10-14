@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'usfslk journal',
+    title: 'usfslk blog',
     siteUrl: 'https://reactgo.com',
   },
   plugins: [

@@ -4,9 +4,11 @@
 }
 
 .post-list {
-    border: 5px solid #ddd;
+    border: 6px solid #222;
     padding: 2rem;
     margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 img{
@@ -14,7 +16,9 @@ img{
 }
 
 .post-list:hover{
-    background-color: #eee;
+    background-color: #222;
+    color: #fcfcfc;
+    border: 6px solid #2A22;
 }
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {

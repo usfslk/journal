@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
+        maxWidth: 840,
         padding: '1.45rem 1.0875rem',
       }}
     >
@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: 'white',
+            color: '#fcfcfc',
             textDecoration: 'none',
           }}
         >

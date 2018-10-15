@@ -1,3 +1,3 @@
-# usfslk blog
+# protobulb-journal
 
 gatsby develop

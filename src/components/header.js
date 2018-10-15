@@ -1,33 +1,41 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import '../layouts/bootstrap.min.css';
+import React from 'react';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: '#222',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 840,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: '#FCFCFC',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
+export default class Header extends React.Component {
+  constructor(props) {
+    super(props);
 
-      </h1>
-    </div>
-  </div>
-)
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.state = {
+      collapsed: true
+    };
+  }
 
-export default Header
+  toggleNavbar() {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  }
+  render() {
+    return (
+      <div className="m-3 bg-white p-2" >
+        <Navbar color="faded" light>
+          <NavbarBrand href="/" className="mr-auto">
+          Journal by Protobulb.io</NavbarBrand>
+          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+          <Collapse isOpen={!this.state.collapsed} navbar>
+            <Nav navbar className="ml-0 pt-3" >
+             <NavItem>
+                <NavLink href="/">Home</NavLink>
+              </NavItem>
+              <NavItem  className="pb-0">
+                <NavLink href="https://protobulb.io">Bring your idea to life!</NavLink>
+              </NavItem>  
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
+}

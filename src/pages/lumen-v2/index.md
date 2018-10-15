@@ -5,17 +5,15 @@ date: '2018-10-11'
 image: main.png
 ---
 
-
-### [Live Demo](https://lumen.protobulb.io/)
-### [Source Code](https://github.com/usfslk/Lumen)
-
-
 This is the second chapter of "Building a social network with Reajct.js and Firebase Tutorial Series", in Chapter One we covered the following topics:
 
  - Enable Firebase Auth and Database
  - Handle forms data
  - Login and create  an account
  - Send and retrieve data using firebase
+
+ ### [Live Demo](https://lumen.protobulb.io/)
+ ### [Source Code](https://github.com/usfslk/Lumen)
 
 The app we built was a great starting point to understand how to communicate with Firebase services and use this platform as a cloud backend but most
 of the big concepts of a social network wasn't there, like a public feed, editing and deleting posts, ect.. so in this article we'll focus on these features.

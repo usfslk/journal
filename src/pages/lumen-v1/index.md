@@ -5,13 +5,12 @@ date: '2018-10-09'
 image: main.jpg
 ---
 
+We’re going to be creating a basic list of items that you do CRUD to - create, read (update and delete in the next chapter). The feature itself is nothing special, it’s really just a skeleton that demonstrates how to do the most common operations with React and Firebase.
 
 ### [Live Demo](https://lumen.protobulb.io/)
 ### [Source Code](https://github.com/usfslk/Lumen)
 
 ### Introduction
-
-We’re going to be creating a basic list of items that you do CRUD to - create, read (update and delete in the next chapter). The feature itself is nothing special, it’s really just a skeleton that demonstrates how to do the most common operations with React and Firebase.
 
 *Here are a few important concepts for this lesson.*
 

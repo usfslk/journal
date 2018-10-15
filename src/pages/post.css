@@ -1,6 +1,11 @@
- .link{
+.link{
     text-decoration: none;
     color: black;
+}
+
+
+.link:hover{
+    text-decoration: none;
 }
 
 .post-list {
@@ -19,6 +24,7 @@ img{
     background-color: #222;
     color: #fcfcfc;
     border: 6px solid #2A22;
+    text-decoration: none;
 }
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {

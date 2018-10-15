@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'usfslk blog',
+    title: 'Protobulb.io Blog',
     siteUrl: 'https://reactgo.com',
   },
   plugins: [
@@ -8,20 +8,20 @@ module.exports = {
         resolve: `gatsby-plugin-google-analytics`,
         options: {
           trackingId: "UA-127467388-1",
-          head: true,
+          head: false,
         },
       },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'protobulb-journal',
+        short_name: 'protobulb-journal',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#fff',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png',
+        icon: 'src/images/logo.png',
       },
     },
 

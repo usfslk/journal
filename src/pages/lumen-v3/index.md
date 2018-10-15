@@ -5,16 +5,15 @@ date: '2018-10-14'
 image: main.png
 ---
 
-
-### [Live Demo](https://lumen.protobulb.io/)
-### [Source Code](https://github.com/usfslk/Lumen)
-
 Welcome to the third and last chapter of 'Building a social network with React.js and Firebase'. In Chapter Two we covered the following topics:
 
  - Update and Delete posts
  - Build better UI with Semantic
 
-In this part you’re going to implement a very popular feature, a reddit-like vote but also dive deeper into using Semantic UI components.
+In this part you’re going to implement a very popular feature, a Reddit-like vote but also dive deeper into using Semantic UI components.
+
+### [Live Demo](https://lumen.protobulb.io/)
+### [Source Code](https://github.com/usfslk/Lumen)
 
 PR are welcome, here's some quick and easy-to-implement features:
 
@@ -24,7 +23,7 @@ PR are welcome, here's some quick and easy-to-implement features:
 
 ### Timestamp
 
-Adding a timestamp to our posts is a very easy step using the momemnt.js library:
+Adding a timestamp to our posts is a very easy step using the moment.js library:
 All we have to do is import it:
 
     import moment from "moment";
@@ -103,7 +102,7 @@ Let's suppose we have this minimal `listItems`
       ))
     );
 
-In order to write the path we're going to use index and nestedIndex, it can seems straighforward but I spent like half an hour doing `console.log`Anyway, here's the functions, I highly recommend to take a look at how we initially saved `this.state.list` and `this.state.keys`
+In order to write the path we're going to use index and nestedIndex, it can seems straighforward but I spent like half an hour doing `console.log`. Anyway, here's the functions, I highly recommend to take a look at how we initially saved `this.state.list` and `this.state.keys`
 
     upvote = (index, nestedIndex) => {
       fire
@@ -115,7 +114,9 @@ In order to write the path we're going to use index and nestedIndex, it can seem
         )
         .once("value", snapshot => {
           var obj = snapshot.val().score;
-          this.setState({ score: obj }, () => this.up(index, nestedIndex));
+          this.setState({ score: obj }, () => this.up(index,
+
+            ));
         });
     };
 
@@ -137,7 +138,7 @@ Same thing for *downvote*, as you can imagine we just replace the plus with minu
 ### Better Profile Page
 
 Rather than using cards for both pages, I decided to use tables for the account
-page since there's less information to display but it also gibves a cleaner look
+page since there's less information to display but it also gives a cleaner look
 
     <Table
       fixed
